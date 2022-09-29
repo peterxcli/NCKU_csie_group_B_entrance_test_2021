@@ -1,0 +1,11 @@
+{
+    "userID": "testID",
+
+    "word": "ASimpleTestForEntranceExam",
+    "num_of_consumers": 1,
+    "num_to_split": 1,
+
+    "socket_producer_consumer": "tcp://127.0.0.1:8888",
+    "socket_consumer_collector": "tcp://127.0.0.1:8889",
+    "socket_system_server": "tcp://127.0.0.1:8887"
+}

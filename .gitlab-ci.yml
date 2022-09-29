@@ -1,0 +1,21 @@
+image: nckucsie/exam-docker:v5
+
+stages:
+    - build
+    - test
+    
+# system-build:
+#     stage: build
+#     tags: 
+#         - shared
+#     script:
+#         - echo "Build executable file for example code..."
+#         - cd src; pyinstaller -F -n run run.py;
+        
+system-run:
+    stage: test
+    tags: 
+        - shared
+    script:
+        - echo "Running system..."
+        - cd src; ./System/run
